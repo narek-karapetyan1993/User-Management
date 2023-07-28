@@ -1,0 +1,26 @@
+@import "Styles/_variables";
+
+.header {
+  background-color: $violet;
+}
+
+.wrapper {
+  position: relative;
+  color: $white;
+  text-align: center;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  padding: 20px 0;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 950px) {
+  .heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

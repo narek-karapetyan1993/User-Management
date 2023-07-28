@@ -1,0 +1,32 @@
+@import "Styles/_variables";
+@import "Styles/_mixins";
+
+.wrapper {
+  padding-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $gray;
+}
+
+th {
+  min-width: 100px;
+  border: 1px solid $gray;
+  text-align: left;
+  padding: 10px;
+  background-color: $gray_light;
+  color: $black;
+  font-size: 20px;
+}
+
+th:first-child {
+  min-width: 10px;
+
+}
+
+td {
+  border: 1px solid grey;
+  padding: 5px 10px;
+}

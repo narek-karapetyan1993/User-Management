@@ -1,0 +1,90 @@
+@import "Styles/_variables";
+@import "Styles/_mixins";
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.formBlock {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  position: relative;
+
+  label {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  &:nth-child(1) {
+    width: 35%;
+  }
+
+  &:nth-child(2) {
+    width: 50%;
+  }
+
+  &:nth-child(3) {
+    width: 70%;
+  }
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+.formInput {
+  background-color: $gray_light;
+  border-radius: 8px;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 8px 12px 16px;
+  width: 100%;
+}
+
+.error {
+  color: $red;
+  font-size: 15px;
+  font-weight: 400;
+  left: 0;
+  line-height: 12px;
+  position: absolute;
+  top: 85px;
+}
+
+.btn {
+  background-color: $violet;
+  border-radius: 8px;
+  color: $white;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 13px 20px;
+}
+
+@media (max-width: 700px) {
+  .formBlock {
+    min-width: 100%;
+  }
+}
